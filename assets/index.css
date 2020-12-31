@@ -1,9 +1,7 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    overflow-x: hidden;
-}
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -13,6 +11,7 @@ body{
 .root{
     border: 2rem solid rgb(58, 56, 56);
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -48,8 +47,9 @@ body{
     flex-grow: 14;
 }
 .logo-img{
-    width: 77px;
-    height: 77px;
+    width: 10%;
+    max-width: 77px;
+    /* height: 77px; */
     border-radius: 50%;
 }
 .right-elems{
@@ -223,7 +223,7 @@ body{
     right: 5%;
     display: flex;
     flex-direction: column;
-    top:60%;
+    bottom: 15%;
 }
 
 .social-media-container a{
@@ -443,7 +443,7 @@ form label{
     padding-left: 12px;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 825px){
     .root{
         border: none;
     }
@@ -520,10 +520,6 @@ form label{
     .root{
         border: none;
     }
-    
-    .menu-items{
-        top: 65px;
-    }
     .material{
         flex-direction: column;
         /* text-align: center; */
@@ -554,6 +550,10 @@ form label{
         width: 63%;
         margin: 42px auto;
         display: block;
+    }
+
+    .menu-items{
+        top: 65px;
     }
 
     .menu-icon.active::before {
@@ -606,4 +606,36 @@ form label{
         order: 2;
     }
 }
+
+@media screen and (max-width: 825px) and (orientation: landscape) {
+    .navbar{
+        position: fixed;
+        top: 0;
+    }
+
+    .home{
+        height: 100vh;
+        position: relative;
+        top: 0;
+    }
+    
+    .content{
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+
+    .mail-us, .social-media-container a{
+        font-size: 1rem;
+    }
+
+    .social-media-container{
+        bottom: 5%;
+    }
+
+    .heading{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
 
