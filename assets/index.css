@@ -11,7 +11,7 @@ html{
 .root{
     border: 2rem solid rgb(58, 56, 56);
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -447,6 +447,24 @@ form label{
     .root{
         border: none;
     }
+
+    .navbar{
+        position: fixed;
+        top: 0;
+    }
+
+    .home{
+        height: 100vh;
+        position: relative;
+        top: 0;
+    }
+
+    .menu-items{
+        position: fixed;
+        top: 0;
+        height: 100vh
+    }
+
     .material{
         flex-direction: column;
         /* text-align: center; */
@@ -517,9 +535,9 @@ form label{
 }
 
 @media only screen and (max-width: 420px) {
-    .root{
+    /* .root{
         border: none;
-    }
+    } */
     .material{
         flex-direction: column;
         /* text-align: center; */
@@ -608,16 +626,16 @@ form label{
 }
 
 @media screen and (max-width: 825px) and (orientation: landscape) {
-    .navbar{
+    /* .navbar{
         position: fixed;
         top: 0;
-    }
+    } */
 
-    .home{
+    /* .home{
         height: 100vh;
         position: relative;
         top: 0;
-    }
+    } */
     
     .content{
         font-size: 0.9rem;
